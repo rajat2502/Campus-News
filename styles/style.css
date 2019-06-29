@@ -14,6 +14,11 @@ h2{
   font-size: 1.6rem;
 }
 
+::selection {
+  background-color: #389BCF;
+  color: white;
+}
+
 
 
 nav{
@@ -38,14 +43,14 @@ nav a{
 
 #main{
   display: grid;
-  grid-template-columns: 105px auto;
+  grid-template-columns: 90px auto;
   position: relative;
   top: 55px;
 }
 
 #sidebar{
   background: white;
-  width: 105px;
+  width: 90px;
   box-shadow: 0 4px 8px #000000;
   z-index: 1;
   transition: width 0.25s;
@@ -77,6 +82,8 @@ nav a{
 #sidebar img{
   margin-right: 20px;
   border-radius: 50%;
+  height: 60px;
+  width: 60px;
 }
 
 #sidebar a{
@@ -123,13 +130,13 @@ nav a{
 }
 
 .event-box{
-  padding: 15px;
+  padding: 25px;
 }
 
 .event-box > div{
-  padding: 25px 10px;
-  box-shadow: 0 4px 8px #000000;
-  height: 285px !important;
+  padding: 25px 15px;
+  box-shadow: 2px 3px 10px #000000;
+  height: 275px !important;
 }
 
 .event-box img{
@@ -142,5 +149,15 @@ nav a{
 }
 
 .event-box h5{
-  font-size: 1.194rem;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 600px){
+  #main{
+    grid-template-columns: auto;
+  }
+
+  #sidebar{
+    display: none;
+  }
 }
