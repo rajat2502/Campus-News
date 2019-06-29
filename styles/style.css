@@ -5,7 +5,7 @@ body{
   font-size: 16px;
 }
 
-h1, h2, h3{
+h1, h2, h3, h4, h5, h6{
   font-weight: bolder;
   color: #389BCF;
 }
@@ -39,17 +39,17 @@ nav a{
 #main{
   display: grid;
   grid-template-columns: 105px auto;
-  height: 200vh;
   position: relative;
   top: 55px;
 }
 
 #sidebar{
+  background: white;
   width: 105px;
   box-shadow: 0 4px 8px #000000;
   z-index: 1;
-  transition:width 0.25s;
-  -webkit-transition:width .25s;
+  transition: width 0.25s;
+  -webkit-transition: width .25s;
   -moz-transition: width 0.25s;
 }
 
@@ -92,6 +92,14 @@ nav a{
   min-width: 360px;
 }
 
+/* scroll-bar */
+/* width */
+#sidebar ul::-webkit-scrollbar {
+  -ms-overflow-style: none;
+  display: none;
+}
+
+/* events */
 #events{
   z-index: -1;
   position: relative;
@@ -114,6 +122,25 @@ nav a{
   border-bottom: 3px solid #389BCF;
 }
 
-/* scroll-bar */
-/* width */
-#sidebar ul::-webkit-scrollbar { width: 0 !important }
+.event-box{
+  padding: 15px;
+}
+
+.event-box > div{
+  padding: 25px 10px;
+  box-shadow: 0 4px 8px #000000;
+  height: 285px !important;
+}
+
+.event-box img{
+  width: 100%;
+  height: 200px;
+}
+
+.event-box h5{
+  margin-top: 10px;
+}
+
+.event-box h5{
+  font-size: 1.194rem;
+}
