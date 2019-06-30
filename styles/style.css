@@ -21,7 +21,6 @@ h2{
   color: white;
 }
 
-
 /* navbar */
 nav{
   background: linear-gradient(to right, #42B8E5, #1D4C94);
@@ -33,7 +32,7 @@ nav{
 
 nav a{
   margin-right: 20px;
-  color: white;
+  color: white !important;
 }
 
 .navbar-collapse{
@@ -181,10 +180,12 @@ nav a{
 
 /* media queries */
 @media only screen and (max-width: 600px){
+
   #main{
     grid-template-columns: auto;
   }
 
+  /* sidebar not visible in mobile view */
   #sidebar{
     display: none;
   }
@@ -228,6 +229,7 @@ nav a{
   /* scroll-bar */
   /* width */
   .navbar-collapse ::-webkit-scrollbar {
+    width: 0 !important;
     -ms-overflow-style: none !important;
     display: none !important;
   }
