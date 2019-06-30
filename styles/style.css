@@ -195,10 +195,11 @@ nav a{
   }
 
   .navbar-collapse{
-    height: 92.4vh;
+    height: 93.2vh;
     overflow-y: scroll;
     overflow-x: hidden;
     font-size: 0.911rem;
+    padding-bottom: 10px
   }
 
   .navbar-collapse li{
