@@ -1,3 +1,4 @@
+/* common styles */
 body{
   margin: 0;
   padding: 0;
@@ -14,13 +15,14 @@ h2{
   font-size: 1.6rem;
 }
 
+/* change the text selection color */
 ::selection {
   background-color: #389BCF;
   color: white;
 }
 
 
-
+/* navbar */
 nav{
   background: linear-gradient(to right, #42B8E5, #1D4C94);
   padding-left: 30px !important;
@@ -39,9 +41,21 @@ nav a{
 }
 
 .navbar-toggler{
-  background-color: #fff;
+  background-color: inherit;
+  border: none;
 }
 
+/* change the toggler icon from default bootstrap icon */
+.navbar-toggler-icon {
+  background-image: url("../assets/images/toggler.png") !important;
+  height: 20px;
+}
+
+.navbar-toggler-icon:focus{
+  outline: none !important;
+}
+
+/* grid-container */
 #main{
   display: grid;
   grid-template-columns: 90px auto;
@@ -49,6 +63,7 @@ nav a{
   top: 55px;
 }
 
+/* sidebar on mobile view */
 #sidebar{
   background: white;
 }
@@ -115,12 +130,14 @@ nav a{
   display: none;
 }
 
+
 /* events */
 #events{
   z-index: -1;
   position: relative;
 }
 
+/* overlay when sidebar is hovered */
 .overlay{
   position: absolute;
   height: 100%;
@@ -161,6 +178,8 @@ nav a{
   font-size: 1rem;
 }
 
+
+/* media queries */
 @media only screen and (max-width: 600px){
   #main{
     grid-template-columns: auto;
@@ -198,6 +217,7 @@ nav a{
   
   .mobile-sidebar-item a{
     font-weight: bolder;
+    display: inline;
   }
 
   .mobile-sidebar-item a:hover{

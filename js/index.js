@@ -1,3 +1,5 @@
+
+// js for handling the sidebar hover events
 document.getElementById('sidebar').addEventListener('mouseover', function(){
   document.querySelectorAll('.name').forEach(function(element){
     element.style.display = "inline";
