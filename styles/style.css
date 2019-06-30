@@ -51,6 +51,14 @@ nav a{
 
 #sidebar{
   background: white;
+}
+
+.mobile-sidebar-item{
+  display: none;
+}
+
+
+#sidebar{
   width: 90px;
   box-shadow: 0 4px 8px #000000;
   z-index: 1;
@@ -160,5 +168,47 @@ nav a{
 
   #sidebar{
     display: none;
+  }
+
+  .mobile-sidebar-item{
+    display: block;
+  }
+
+  .navbar-collapse{
+    height: 93vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-size: 0.911rem;
+  }
+
+  .navbar-collapse li{
+    margin-top: 10px !important;
+  }
+  
+  .mobile-sidebar-item{
+    padding: 4px 0;
+  }
+  
+  .mobile-sidebar-item img{
+    margin-right: 20px;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+  }
+  
+  .mobile-sidebar-item a{
+    font-weight: bolder;
+  }
+
+  .mobile-sidebar-item a:hover{
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* scroll-bar */
+  /* width */
+  .navbar-collapse ::-webkit-scrollbar {
+    -ms-overflow-style: none !important;
+    display: none !important;
   }
 }
