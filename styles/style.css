@@ -198,12 +198,12 @@ nav a{
     height: 93.2vh;
     overflow-y: scroll;
     overflow-x: hidden;
-    font-size: 0.85rem;
-    padding-bottom: 10px
+    font-size: 0.9rem;
+    padding-bottom: 5px;
   }
 
   .navbar-collapse li{
-    margin-top: 10px !important;
+    margin-top: 8px !important;
   }
   
   .mobile-sidebar-item{
@@ -211,7 +211,7 @@ nav a{
   }
   
   .mobile-sidebar-item img{
-    margin-right: 20px;
+    margin-right: 15px;
     border-radius: 50%;
     height: 60px;
     width: 60px;
@@ -232,5 +232,18 @@ nav a{
     width: 0 !important;
     -ms-overflow-style: none !important;
     display: none !important;
+  }
+}
+
+@media only screen and (max-width: 360px){
+  .mobile-sidebar-item img{
+    margin-right: 10px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+  }
+
+  .navbar-collapse{
+    font-size: 0.75rem;
   }
 }
