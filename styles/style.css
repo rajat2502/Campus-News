@@ -46,7 +46,7 @@ nav a{
 
 /* change the toggler icon from default bootstrap icon */
 .navbar-toggler-icon {
-  background-image: url("../assets/images/toggler.png") !important;
+  background-image: url("../assets/images/Group 69.svg") !important;
   height: 20px;
 }
 
