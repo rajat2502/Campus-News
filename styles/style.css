@@ -91,7 +91,7 @@ nav a{
 }
 
 #sidebar ul li{
-  padding: 4px 10px;
+  padding: 4px 12px 4px 13px;
   margin-top: 14px;
   color: #389BCF;
   border-left: 5px solid white;
@@ -103,13 +103,13 @@ nav a{
 }
 
 #sidebar img{
-  margin-right: 20px;
   border-radius: 50%;
   height: 60px;
   width: 60px;
 }
 
 #sidebar a{
+  margin-left: 20px;
   font-weight: bolder;
   display: none;
 }
@@ -127,6 +127,11 @@ nav a{
 #sidebar ul::-webkit-scrollbar {
   -ms-overflow-style: none;
   display: none;
+}
+
+.active-li{
+  border-left: 5px solid #389BCF !important;
+  background: rgb(42, 125, 184, 0.3);
 }
 
 
@@ -185,6 +190,17 @@ nav a{
 
 .event-box h5{
   font-size: 1rem;
+}
+
+.contact-btn{
+  margin-top: 1.5rem;
+  padding: 6px 14px;
+  font-size: 1.2rem; 
+  background-color: #389BCF;
+  border: 0;
+  color: white;
+  border-radius: 10px;
+  transform: scale(1.1);
 }
 
 
