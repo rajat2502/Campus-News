@@ -132,9 +132,18 @@ nav a{
 
 /* events */
 #events{
-  z-index: -1;
+  z-index: 0;
   position: relative;
 }
+
+.back-to-index{
+  padding: 25px 30px 0 30px;
+}
+
+.back-to-index a:hover{
+  text-decoration: none;
+}
+
 
 /* overlay when sidebar is hovered */
 .overlay{
@@ -143,7 +152,7 @@ nav a{
   width: 100%;
   background-color: rgba(20,20,20, .8);
   display: none;
-  z-index: 3;
+  z-index: 1;
 }
 .content{
   padding: 25px 30px;
@@ -162,6 +171,7 @@ nav a{
   padding: 15px 15px;
   box-shadow: 2px 3px 10px #000000;
   height: 275px !important;
+  cursor: pointer;
 }
 
 .event-box img{
@@ -198,7 +208,7 @@ nav a{
     height: calc(100vh - 55px);
     overflow-y: scroll;
     overflow-x: hidden;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     padding-bottom: 5px;
   }
 
