@@ -23,3 +23,21 @@ document.getElementById('sidebar').addEventListener('mouseout', function(){
     element.style.padding = "4px 12px 4px 13px";
   })
 });
+
+// modal-box-js
+
+// to open a modal-box
+document.querySelectorAll('.event-box').forEach(function(box){
+  box.addEventListener('click', function(){
+    this.nextElementSibling.style.display = "block";
+  })
+})
+
+// to close the modal-box
+document.querySelectorAll('.modal-box').forEach(function(box){
+  box.addEventListener('click', function(e){
+    if(e.target == box){
+      box.style.display = "none";
+    }
+  })
+})
