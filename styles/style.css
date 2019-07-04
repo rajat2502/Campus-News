@@ -250,6 +250,10 @@ nav a{
 /* media queries */
 @media only screen and (max-width: 600px){
 
+  h1{
+    font-size: 1.8rem;
+  }
+
   #main{
     grid-template-columns: auto;
   }
