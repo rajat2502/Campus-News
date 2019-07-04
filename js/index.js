@@ -27,9 +27,10 @@ document.getElementById('sidebar').addEventListener('mouseout', function(){
 // modal-box-js
 
 // to open a modal-box
-document.querySelectorAll('.event-box').forEach(function(box){
+document.querySelectorAll('.event-box > div').forEach(function(box){
   box.addEventListener('click', function(){
-    this.nextElementSibling.style.display = "block";
+    this.parentElement.nextElementSibling.style.display = "block";
+    // this.nextElementSibling.style.display = "block";
   })
 })
 
