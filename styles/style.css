@@ -165,7 +165,6 @@ nav a{
 /* event boxes */
 .event-box{
   padding: 25px;
-  /* position: relative; */
 }
 
 .event-box > div{
@@ -173,15 +172,20 @@ nav a{
   box-shadow: 2px 3px 10px #000000;
   height: 275px !important;
   cursor: pointer;
+  position: relative;
 }
 
 .event-box img{
   max-width: 100%;
-  height: 200px;
+  max-height: 200px;
 }
 
 .event-box h5{
-  margin-top: 15px;
+  /* margin-top: 15px; */
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
 }
 
 .event-box h5{
