@@ -57,15 +57,11 @@ nav a{
 /* grid-container */
 #main{
   display: grid;
-  grid-template-columns: 90px auto;
+  grid-template-columns: 70px auto;
   position: relative;
   top: 55px;
 }
 
-/* sidebar on mobile view */
-#sidebar{
-  background: white;
-}
 /* mobile navbar display none on desktop view */
 .mobile-sidebar-item{
   display: none;
@@ -73,12 +69,14 @@ nav a{
 
 
 #sidebar{
-  width: 90px;
+  background: white;
+  width: 70px;
   box-shadow: 0 4px 8px #000000;
   z-index: 1;
   transition: width 0.25s;
   -webkit-transition: width .25s;
   -moz-transition: width 0.25s;
+  font-size: 13.6px !important;
 }
 
 #sidebar ul{
@@ -91,8 +89,8 @@ nav a{
 }
 
 #sidebar ul li{
-  padding: 4px 12px 4px 13px;
-  margin-top: 14px;
+  padding: 8px 12px 8px 8px;
+  margin-top: 4px;
   color: #389BCF;
   border-left: 5px solid white;
 }
@@ -104,12 +102,12 @@ nav a{
 
 #sidebar img{
   border-radius: 50%;
-  height: 60px;
-  width: 60px;
+  height: 46px;
+  width: 46px;
 }
 
 #sidebar a{
-  margin-left: 20px;
+  margin-left: 22px;
   font-weight: bolder;
   display: none;
 }
@@ -119,7 +117,7 @@ nav a{
 }
 
 #sidebar:hover{
-  min-width: 360px;
+  min-width: 306px;
 }
 
 /* scroll-bar */
@@ -140,6 +138,7 @@ nav a{
 #events{
   z-index: 0;
   position: relative;
+  margin: 0 5vh;
 }
 
 
@@ -177,12 +176,12 @@ nav a{
 
 .event-box img{
   max-width: 100%;
-  max-height: 200px;
+  height: 200px;
 }
 
 .event-box h5{
   position: absolute;
-  bottom: 20px;
+  bottom: 15px;
   left: 0;
   right: 0;
 }
@@ -366,5 +365,15 @@ nav a{
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 10px;
+  }
+}
+
+@media only screen and (max-width: 320px){
+  .content{
+    padding: 5px 10px;
+  }
+
+  .modal-box-content{
+    height: 82vh;
   }
 }

@@ -1,4 +1,3 @@
-
 // js for handling the sidebar hover events
 document.getElementById('sidebar').addEventListener('mouseover', function(){
   document.querySelectorAll('.name').forEach(function(element){
@@ -6,10 +5,6 @@ document.getElementById('sidebar').addEventListener('mouseover', function(){
   })
 
   document.getElementsByClassName('overlay')[0].style.display = "block";
-
-  document.querySelectorAll('#sidebar ul li').forEach(function(element){
-    element.style.padding = "4px 12px 4px 12px";
-  })
 });
 
 document.getElementById('sidebar').addEventListener('mouseout', function(){
@@ -18,10 +13,6 @@ document.getElementById('sidebar').addEventListener('mouseout', function(){
   })
 
   document.getElementsByClassName('overlay')[0].style.display = "none";
-
-  document.querySelectorAll('#sidebar ul li').forEach(function(element){
-    element.style.padding = "4px 12px 4px 13px";
-  })
 });
 
 // modal-box-js
@@ -30,7 +21,6 @@ document.getElementById('sidebar').addEventListener('mouseout', function(){
 document.querySelectorAll('.event-box > div').forEach(function(box){
   box.addEventListener('click', function(){
     this.parentElement.nextElementSibling.style.display = "block";
-    // this.nextElementSibling.style.display = "block";
   })
 })
 
@@ -42,3 +32,17 @@ document.querySelectorAll('.modal-box').forEach(function(box){
     }
   })
 })
+
+// js to display the same image on modals as their event boxes
+document.querySelectorAll('.modal-poster > img').forEach(function(img){
+  address = img.parentElement.parentElement.parentElement.previousElementSibling.firstElementChild.firstElementChild.getAttribute('src');
+
+  img.setAttribute('src', address);
+});
+
+// js to show the same event heading on modals as on their event boxes
+document.querySelectorAll('.modal-details > h4').forEach(function(heading){
+  heading_content = heading.parentElement.parentElement.parentElement.previousElementSibling.firstElementChild.lastElementChild.innerText;
+
+  heading.innerHTML = heading_content
+});
