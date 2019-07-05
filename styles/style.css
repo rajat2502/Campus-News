@@ -169,14 +169,14 @@ nav a{
 .event-box > div{
   padding: 15px 15px;
   box-shadow: 2px 3px 10px #000000;
-  height: 275px !important;
+  height: 250px !important;
   cursor: pointer;
   position: relative;
 }
 
 .event-box img{
   max-width: 100%;
-  height: 200px;
+  height: 180px;
 }
 
 .event-box h5{
@@ -217,6 +217,7 @@ nav a{
 .modal-box-content{
   width: 50vw;
   height: 60vh;
+  overflow-y: scroll;
   background-color: white;
   position: absolute;
   top: 50%;
@@ -224,6 +225,12 @@ nav a{
   transform: translate(-50%, -50%);
   border-radius: 20px;
   animation: fadeIn 0.5s ease-in-out 0s forwards;
+}
+
+.modal-box-content::-webkit-scrollbar {
+  width: 0 !important;
+  -ms-overflow-style: none !important;
+  display: none !important;
 }
 
 .modal-poster, .modal-details{
@@ -345,6 +352,7 @@ nav a{
     margin-right: auto;
     width: 86vw;
     height: 70vh;
+    overflow-y: scroll;
     background-color: white;
     position: absolute;
     top: 50%;
