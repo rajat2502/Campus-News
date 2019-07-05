@@ -251,6 +251,20 @@ nav a{
 
 
 /* media queries */
+
+@media only screen and (max-width: 1300px){
+  #events{
+    margin: 0;
+  }
+}
+
+
+@media only screen and (max-width: 800px){
+  #events{
+    margin: 0 1.5vh;
+  }
+}
+
 @media only screen and (max-width: 600px){
 
   h1{
@@ -308,6 +322,10 @@ nav a{
     width: 0 !important;
     -ms-overflow-style: none !important;
     display: none !important;
+  }
+
+  #events{
+    margin: 0;
   }
 
   .modal-box{
