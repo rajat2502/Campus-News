@@ -161,6 +161,37 @@ nav a{
   border-bottom: 3px solid #389BCF;
 }
 
+/* slider */
+
+.slider, .informal-events{
+  padding: 25px !important;
+}
+
+.slider img, .informal-events > div{
+  height: 65vh;
+  border: 2px solid black;
+}
+
+.informal-events > div{
+  overflow-y: scroll;
+}
+
+.informal-events ul{
+  line-height: 1.2;
+  padding-right: 3px;
+  padding-top: 4px;
+}
+
+.informal-events ul li{
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.date{
+  color: #389BCF;
+  font-weight: bold;
+}
+
 /* event boxes */
 .event-box{
   padding: 25px;
@@ -331,6 +362,10 @@ nav a{
     display: none !important;
   }
 
+  .slider img, .informal-events > div{
+    height: 50vh;
+  }
+
   #events{
     margin: 0;
   }
@@ -391,6 +426,10 @@ nav a{
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 10px;
+  }
+
+  .slider img, .informal-events > div{
+    height: 40vh;
   }
 }
 
