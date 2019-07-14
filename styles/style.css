@@ -151,6 +151,7 @@ nav a{
   display: none;
   z-index: 1;
 }
+
 .content{
   padding: 25px 30px;
 }
@@ -191,6 +192,22 @@ nav a{
   color: #389BCF;
   font-weight: bold;
 }
+
+/* width */
+.informal-events > div::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+.informal-events > div::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+/* Handle */
+.informal-events > div::-webkit-scrollbar-thumb {
+  background: #389BCF; 
+}
+
 
 /* event boxes */
 .event-box{
