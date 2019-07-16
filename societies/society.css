@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Serif|Poppins&display=swap');
+
+
+body{
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Poppins', sans-serif;
+}
+
+h1{
+  font-weight: 600;
+}
+
+p{
+  line-height: 1.7;
+  font-family: 'PT Serif', serif;
+  font-size: 1.1rem;
+}
+
+.main-video{
+  width: 100%;
+}
+
+/* .slider img{
+  height: 70vh !important;
+} */
+
+.slider{
+  margin: 0 auto;
+}
