@@ -8,6 +8,10 @@
 
   <!-- bootstrap cdn -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
   <!-- custom stylesheets -->
   <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -28,10 +32,10 @@
             <a class="nav-link font-weight-bold" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link font-weight-bold" href="#">Past Events</a>
+            <a class="nav-link font-weight-bold" href="#past-events">Past Events</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link font-weight-bold" href="#">Contact</a>
+            <a class="nav-link font-weight-bold" href="#footer">Contact</a>
           </li>
           <!-- societies and events -->
           <li class="mobile-sidebar-item">
@@ -457,7 +461,10 @@
             </div>
           </div>
 
-          <div class='content pt-5'>
+
+
+          <!-- UPCOMING EVENTS -->
+          <div class='content pt-5' id="upcoming-events">
               <h2 class="main-heading">UPCOMING EVENTS</h2>
 
               <div class="row mt-4">
@@ -465,8 +472,8 @@
                 <!-- first event box -->
                 <div class="col-lg-3 col-md-6 col-sm-12 event-box">
                  <div>
-                   <img src="assets\images\ncs\web.png" alt="" class="img-fluid">
-                   <h5>Workshop On Web Development</h5>
+                   <img src="assets\images/upcoming-events/1.jpg" alt="" class="img-fluid">
+                   <h5>NCS Recruitments</h5>
                  </div> 
                 </div>
 
@@ -479,13 +486,15 @@
 
                       <div class="col-lg-5 col-md-12 modal-details">
                           <h4></h4>
-                          <br>
-                          <p>
-                              This workshop will be conducted by Nibble Computer Society
+                          <p class="pt-1">
+                              The Recruitments will be conducted by Nibble Computer Society
                           </p>
                           <h6>Date: <span>25-26 July</span></h6>
                           <h6>Time: <span>10-12am</span></h6>
                           <h6>Venue: <span>Computer Centre</span></h6>
+                          <a href="https://www.facebook.com/nibblecomputersociety">
+                            <button class="btn btn-primary rounded-pill mt-1">More Information</button>
+                          </a>
                       </div>
                     </div>
                 </div>
@@ -493,8 +502,8 @@
                 <!-- second event box -->
                 <div class="col-lg-3 col-md-6 col-sm-12 event-box">
                   <div>
-                   <img src="assets\images\ncs\nk.png" alt="">
-                   <h5>Night Knitting</h5>
+                   <img src="assets\images/upcoming-events/2.jpg" alt="">
+                   <h5>EDC Recruitments</h5>
                  </div> 
                 </div>
 
@@ -506,14 +515,16 @@
                       </div>
 
                       <div class="col-lg-5 col-md-12 modal-details">
-                          <h4></h4>
-                          <br>
-                          <p>
-                              This workshop will be conducted by Nibble Computer Society
-                          </p>
-                          <h6>Date: <span>25-26 July</span></h6>
-                          <h6>Time: <span>10-12am</span></h6>
-                          <h6>Venue: <span>Computer Centre</span></h6>
+                        <h4></h4>
+                        <p class="pt-1">
+                            The Recruitments will be conducted by EDC-JSS
+                        </p>
+                        <h6>Date: <span>25-26 July</span></h6>
+                        <h6>Time: <span>10-12am</span></h6>
+                        <h6>Venue: <span>Computer Centre</span></h6>
+                        <a href="https://www.facebook.com/nibblecomputersociety">
+                          <button class="btn btn-primary rounded-pill mt-1">More Information</button>
+                        </a>
                       </div>
                     </div>
                 </div>
@@ -521,8 +532,8 @@
                 <!-- third event box -->
                 <div class="col-lg-3 col-md-6 col-sm-12 event-box">
                   <div>
-                   <img src="assets\images\ncs\op.png" alt="">
-                   <h5>Orientation Programme of NCS</h5>
+                   <img src="assets\images/upcoming-events/3.jpg" alt="">
+                   <h5>Design Workshop</h5>
                  </div> 
                 </div>
 
@@ -534,14 +545,16 @@
                       </div>
 
                       <div class="col-lg-5 col-md-12 modal-details">
-                          <h4></h4>
-                          <br>
-                          <p>
-                              This workshop will be conducted by Nibble Computer Society
-                          </p>
-                          <h6>Date: <span>25-26 July</span></h6>
-                          <h6>Time: <span>10-12am</span></h6>
-                          <h6>Venue: <span>Computer Centre</span></h6>
+                        <h4></h4>
+                        <p class="pt-1">
+                            This workshop will be conducted by Nibble Computer Society
+                        </p>
+                        <h6>Date: <span>25-26 July</span></h6>
+                        <h6>Time: <span>10-12am</span></h6>
+                        <h6>Venue: <span>Computer Centre</span></h6>
+                        <a href="https://www.facebook.com/nibblecomputersociety">
+                          <button class="btn btn-primary rounded-pill mt-1">More Information</button>
+                        </a>
                       </div>
                     </div>
                 </div>
@@ -549,8 +562,8 @@
                 <!-- fourth box -->
                 <div class="col-lg-3 col-md-6 col-sm-12 event-box">
                   <div>
-                   <img src="assets\images\mmil.png" alt="">
-                   <h5>Workshop On Web Development</h5>
+                   <img src="assets\images/upcoming-events/4.jpg" alt="">
+                   <h5>Workshop On Machine Learning</h5>
                  </div> 
                 </div>
                 <!-- modal-box -->
@@ -561,14 +574,16 @@
                     </div>
 
                     <div class="col-lg-5 col-md-12 modal-details">
-                        <h4></h4>
-                        <br>
-                        <p>
-                            This workshop will be conducted by Nibble Computer Society
-                        </p>
-                        <h6>Date: <span>25-26 July</span></h6>
-                        <h6>Time: <span>10-12am</span></h6>
-                        <h6>Venue: <span>Computer Centre</span></h6>
+                      <h4></h4>
+                      <p class="pt-1">
+                          This workshop will be conducted by DSC JSS NOIDA
+                      </p>
+                      <h6>Date: <span>25-26 July</span></h6>
+                      <h6>Time: <span>10-12am</span></h6>
+                      <h6>Venue: <span>Computer Centre</span></h6>
+                      <a href="https://www.facebook.com/nibblecomputersociety">
+                        <button class="btn btn-primary rounded-pill mt-1">More Information</button>
+                      </a>
                     </div>
                   </div>
               </div>
@@ -582,8 +597,8 @@
                 <!-- first event box -->
                   <div class="col-lg-3 col-md-6 col-sm-12 event-box">
                    <div>
-                     <img src="assets\images\ncs\web.png" alt="">
-                     <h5>Workshop On Web Development</h5>
+                     <img src="assets\images/upcoming-events/5.jpg" alt="">
+                     <h5>AUTO QUIZ</h5>
                    </div> 
                   </div>
                   <!-- modal-box -->
@@ -594,14 +609,16 @@
                         </div>
   
                         <div class="col-lg-5 col-md-12 modal-details">
-                            <h4></h4>
-                            <br>
-                            <p>
-                                This workshop will be conducted by Nibble Computer Society
-                            </p>
-                            <h6>Date: <span>25-26 July</span></h6>
-                            <h6>Time: <span>10-12am</span></h6>
-                            <h6>Venue: <span>Computer Centre</span></h6>
+                          <h4></h4>
+                          <p class="pt-1">
+                              The event will be conducted by Team Vega Racing and powered by NCS
+                          </p>
+                          <h6>Date: <span>25-26 July</span></h6>
+                          <h6>Time: <span>10-12am</span></h6>
+                          <h6>Venue: <span>Computer Centre</span></h6>
+                          <a href="https://www.facebook.com/nibblecomputersociety">
+                            <button class="btn btn-primary rounded-pill mt-1">More Information</button>
+                          </a>
                         </div>
                       </div>
                   </div>
@@ -609,8 +626,8 @@
                   <!-- second box -->
                   <div class="col-lg-3 col-md-6 col-sm-12 event-box">
                     <div>
-                     <img src="assets\images\ncs\nk.png" alt="" class="img-fluid">
-                     <h5>Night Knitting</h5>
+                     <img src="assets\images/upcoming-events/6.jpg" alt="" class="img-fluid">
+                     <h5>Design Workshop</h5>
                    </div> 
                   </div>
 
@@ -622,14 +639,16 @@
                         </div>
   
                         <div class="col-lg-5 col-md-12 modal-details">
-                            <h4></h4>
-                            <br>
-                            <p>
-                                This workshop will be conducted by Nibble Computer Society
-                            </p>
-                            <h6>Date: <span>25-26 July</span></h6>
-                            <h6>Time: <span>10-12am</span></h6>
-                            <h6>Venue: <span>Computer Centre</span></h6>
+                          <h4></h4>
+                          <p class="pt-1">
+                              This workshop will be conducted by Microsoft Mobile Innovation Labs JSS
+                          </p>
+                          <h6>Date: <span>25-26 July</span></h6>
+                          <h6>Time: <span>10-12am</span></h6>
+                          <h6>Venue: <span>Computer Centre</span></h6>
+                          <a href="https://www.facebook.com/nibblecomputersociety">
+                            <button class="btn btn-primary rounded-pill mt-1">More Information</button>
+                          </a>
                         </div>
                       </div>
                   </div>
@@ -638,8 +657,8 @@
                   <!-- third box -->
                   <div class="col-lg-3 col-md-6 col-sm-12 event-box">
                     <div>
-                     <img src="assets\images\ncs\op.png" alt="" class="img-fluid">
-                     <h5>Orientation Programme of NCS</h5>
+                     <img src="assets\images/upcoming-events/7.jpg" alt="" class="img-fluid">
+                     <h5>Workshop on Androcar</h5>
                    </div> 
                   </div>
                   <!-- modal-box -->
@@ -650,14 +669,16 @@
                         </div>
   
                         <div class="col-lg-5 col-md-12 modal-details">
-                            <h4></h4>
-                            <br>
-                            <p>
-                                This workshop will be conducted by Nibble Computer Society
-                            </p>
-                            <h6>Date: <span>25-26 July</span></h6>
-                            <h6>Time: <span>10-12am</span></h6>
-                            <h6>Venue: <span>Computer Centre</span></h6>
+                          <h4></h4>
+                          <p class="pt-1">
+                              This workshop will be conducted by SEED-Electrino
+                          </p>
+                          <h6>Date: <span>25-26 July</span></h6>
+                          <h6>Time: <span>10-12am</span></h6>
+                          <h6>Venue: <span>Computer Centre</span></h6>
+                          <a href="https://www.facebook.com/nibblecomputersociety">
+                            <button class="btn btn-primary rounded-pill mt-1">More Information</button>
+                          </a>
                         </div>
                       </div>
                   </div>
@@ -665,8 +686,8 @@
                   <!-- fourth box -->
                   <div class="col-lg-3 col-md-6 col-sm-12 event-box">
                     <div>
-                     <img src="assets\images\ncs\web.png" alt="" class="img-fluid">
-                     <h5>Workshop On Web Development</h5>
+                     <img src="assets\images/upcoming-events/8.jpg" alt="" class="img-fluid">
+                     <h5>VEGA Recruitments</h5>
                    </div> 
                   </div>
                   <!-- modal-box -->
@@ -677,134 +698,297 @@
                         </div>
   
                         <div class="col-lg-5 col-md-12 modal-details">
-                            <h4></h4>
-                            <br>
-                            <p>
-                                This workshop will be conducted by Nibble Computer Society
-                            </p>
-                            <h6>Date: <span>25-26 July</span></h6>
-                            <h6>Time: <span>10-12am</span></h6>
-                            <h6>Venue: <span>Computer Centre</span></h6>
+                          <h4></h4>
+                          <p class="pt-1">
+                              The Recruitments will be conducted by Team VEGA Racing
+                          </p>
+                          <h6>Date: <span>25-26 July</span></h6>
+                          <h6>Time: <span>10-12am</span></h6>
+                          <h6>Venue: <span>Computer Centre</span></h6>
+                          <a href="https://www.facebook.com/nibblecomputersociety">
+                            <button class="btn btn-primary rounded-pill mt-1">More Information</button>
+                          </a>
                         </div>
                       </div>
                   </div>
 
                 </div>
 
-                 <!-- next row -->
+          </div>
+
+
+                  <!-- PAST EVENTS -->
+            <div class='content pt-3' id="past-events">
+              <h2 class="main-heading">PAST EVENTS</h2>
+
+              <div class="row mt-4">
+
+                <!-- first event box -->
+                <div class="col-lg-3 col-md-6 col-sm-12 event-box">
+                 <div>
+                   <img src="assets\images/past-events/1.jpg" alt="" class="img-fluid">
+                   <h5>NCS Recruitments</h5>
+                 </div> 
+                </div>
+
+                <!-- modal-box -->
+                <div class="modal-box">
+                    <div class="row modal-box-content">
+                      <div class="col-lg-7 col-md-12 modal-poster">
+                          <img src="" alt="" class="img-fluid">
+                      </div>
+
+                      <div class="col-lg-5 col-md-12 modal-details">
+                        <h4></h4>
+                        <p class="pt-1">
+                            The Recruitments were be conducted by Nibble Computer Society
+                        </p>
+                        <h6>Date: <span>25-26 July</span></h6>
+                        <h6>Time: <span>10-12am</span></h6>
+                        <h6>Venue: <span>Computer Centre</span></h6>
+                        <a href="https://www.facebook.com/nibblecomputersociety">
+                          <button class="btn btn-primary rounded-pill mt-1">More Information</button>
+                        </a>
+                      </div>
+                    </div>
+                </div>
+      
+                <!-- second event box -->
+                <div class="col-lg-3 col-md-6 col-sm-12 event-box">
+                  <div>
+                   <img src="assets\images/past-events/2.jpg" alt="">
+                   <h5>Qunata Workshop</h5>
+                 </div> 
+                </div>
+
+                <!-- modal-box -->
+                <div class="modal-box">
+                    <div class="row modal-box-content">
+                      <div class="col-lg-7 col-md-12 modal-poster">
+                          <img src="" alt="">
+                      </div>
+
+                      <div class="col-lg-5 col-md-12 modal-details">
+                        <h4></h4>
+                        <p class="pt-1">
+                            This workshop was be conducted by Quanta
+                        </p>
+                        <h6>Date: <span>25-26 July</span></h6>
+                        <h6>Time: <span>10-12am</span></h6>
+                        <h6>Venue: <span>Computer Centre</span></h6>
+                        <a href="https://www.facebook.com/nibblecomputersociety">
+                          <button class="btn btn-primary rounded-pill mt-1">More Information</button>
+                        </a>
+                      </div>
+                    </div>
+                </div>
+      
+                <!-- third event box -->
+                <div class="col-lg-3 col-md-6 col-sm-12 event-box">
+                  <div>
+                   <img src="assets\images/past-events/3.jpg" alt="">
+                   <h5>Manual Robotics Workshop</h5>
+                 </div> 
+                </div>
+
+                <!-- modal-box -->
+                <div class="modal-box">
+                    <div class="row modal-box-content">
+                      <div class="col-lg-7 col-md-12 modal-poster">
+                          <img src="" alt="">
+                      </div>
+
+                      <div class="col-lg-5 col-md-12 modal-details">
+                        <h4></h4>
+                        <p class="pt-1">
+                            This workshop was be conducted by Quanta
+                        </p>
+                        <h6>Date: <span>25-26 July</span></h6>
+                        <h6>Time: <span>10-12am</span></h6>
+                        <h6>Venue: <span>Computer Centre</span></h6>
+                        <a href="https://www.facebook.com/nibblecomputersociety">
+                          <button class="btn btn-primary rounded-pill mt-1">More Information</button>
+                        </a>
+                      </div>
+                    </div>
+                </div>
+      
+                <!-- fourth box -->
+                <div class="col-lg-3 col-md-6 col-sm-12 event-box">
+                  <div>
+                   <img src="assets\images/past-events/4.jpg" alt="">
+                   <h5>MMIL Recruitments</h5>
+                 </div> 
+                </div>
+                <!-- modal-box -->
+               <div class="modal-box">
+                  <div class="row modal-box-content">
+                    <div class="col-lg-7 col-md-12 modal-poster">
+                        <img src="" alt="">
+                    </div>
+
+                    <div class="col-lg-5 col-md-12 modal-details">
+                      <h4></h4>
+                      <p class="pt-1">
+                        The Recruitments were be conducted by MMIL
+                      </p>
+                      <h6>Date: <span>25-26 July</span></h6>
+                      <h6>Time: <span>10-12am</span></h6>
+                      <h6>Venue: <span>Computer Centre</span></h6>
+                      <a href="https://www.facebook.com/nibblecomputersociety">
+                        <button class="btn btn-primary rounded-pill mt-1">More Information</button>
+                      </a>
+                    </div>
+                  </div>
+              </div>
+
+              </div>
+
+              
+              <!-- next row -->
               <div class="row mt-2">
 
-                  <!-- first event box -->
-                    <div class="col-lg-3 col-md-6 col-sm-12 event-box">
-                     <div>
-                       <img src="assets\images\ncs\web.png" alt="">
-                       <h5>Workshop On Web Development</h5>
-                     </div> 
-                    </div>
-                    <!-- modal-box -->
-                    <div class="modal-box">
-                        <div class="row modal-box-content">
-                          <div class="col-lg-7 col-md-12 modal-poster">
-                              <img src="" alt="">
-                          </div>
-    
-                          <div class="col-lg-5 col-md-12 modal-details">
-                              <h4></h4>
-                              <br>
-                              <p>
-                                  This workshop will be conducted by Nibble Computer Society
-                              </p>
-                              <h6>Date: <span>25-26 July</span></h6>
-                              <h6>Time: <span>10-12am</span></h6>
-                              <h6>Venue: <span>Computer Centre</span></h6>
-                          </div>
-                        </div>
-                    </div>
-                    
-                    <!-- second box -->
-                    <div class="col-lg-3 col-md-6 col-sm-12 event-box">
-                      <div>
-                       <img src="assets\images\ncs\nk.png" alt="" class="img-fluid">
-                       <h5>Night Knitting</h5>
-                     </div> 
-                    </div>
-  
-                    <!-- modal-box -->
-                    <div class="modal-box">
-                        <div class="row modal-box-content">
-                          <div class="col-lg-7 col-md-12 modal-poster">
-                              <img src="" alt="">
-                          </div>
-    
-                          <div class="col-lg-5 col-md-12 modal-details">
-                              <h4></h4>
-                              <br>
-                              <p>
-                                  This workshop will be conducted by Nibble Computer Society
-                              </p>
-                              <h6>Date: <span>25-26 July</span></h6>
-                              <h6>Time: <span>10-12am</span></h6>
-                              <h6>Venue: <span>Computer Centre</span></h6>
-                          </div>
-                        </div>
-                    </div>
-  
-  
-                    <!-- third box -->
-                    <div class="col-lg-3 col-md-6 col-sm-12 event-box">
-                      <div>
-                       <img src="assets\images\ncs\op.png" alt="" class="img-fluid">
-                       <h5>Orientation Programme of NCS</h5>
-                     </div> 
-                    </div>
-                    <!-- modal-box -->
-                    <div class="modal-box">
-                        <div class="row modal-box-content">
-                          <div class="col-lg-7 col-md-12 modal-poster">
-                              <img src="" alt="">
-                          </div>
-    
-                          <div class="col-lg-5 col-md-12 modal-details">
-                              <h4></h4>
-                              <br>
-                              <p>
-                                  This workshop will be conducted by Nibble Computer Society
-                              </p>
-                              <h6>Date: <span>25-26 July</span></h6>
-                              <h6>Time: <span>10-12am</span></h6>
-                              <h6>Venue: <span>Computer Centre</span></h6>
-                          </div>
-                        </div>
-                    </div>
-          
-                    <!-- fourth box -->
-                    <div class="col-lg-3 col-md-6 col-sm-12 event-box">
-                      <div>
-                       <img src="assets\images\ncs\web.png" alt="" class="img-fluid">
-                       <h5>Workshop On Web Development</h5>
-                     </div> 
-                    </div>
-                    <!-- modal-box -->
-                    <div class="modal-box">
-                        <div class="row modal-box-content">
-                          <div class="col-lg-7 col-md-12 modal-poster">
-                              <img src="" alt="">
-                          </div>
-    
-                          <div class="col-lg-5 col-md-12 modal-details">
-                              <h4></h4>
-                              <br>
-                              <p>
-                                  This workshop will be conducted by Nibble Computer Society
-                              </p>
-                              <h6>Date: <span>25-26 July</span></h6>
-                              <h6>Time: <span>10-12am</span></h6>
-                              <h6>Venue: <span>Computer Centre</span></h6>
-                          </div>
-                        </div>
-                    </div>
-  
+                <!-- first event box -->
+                  <div class="col-lg-3 col-md-6 col-sm-12 event-box">
+                   <div>
+                     <img src="assets\images/past-events/5.jpg" alt="">
+                     <h5>Treasuro</h5>
+                   </div> 
                   </div>
+                  <!-- modal-box -->
+                  <div class="modal-box">
+                      <div class="row modal-box-content">
+                        <div class="col-lg-7 col-md-12 modal-poster">
+                            <img src="" alt="">
+                        </div>
+  
+                        <div class="col-lg-5 col-md-12 modal-details">
+                          <h4></h4>
+                          <p class="pt-1">
+                              The Event was be conducted by MMIL
+                          </p>
+                          <h6>Date: <span>25-26 July</span></h6>
+                          <h6>Time: <span>10-12am</span></h6>
+                          <h6>Venue: <span>Computer Centre</span></h6>
+                          <a href="https://www.facebook.com/nibblecomputersociety">
+                            <button class="btn btn-primary rounded-pill mt-1">More Information</button>
+                          </a>
+                        </div>
+                      </div>
+                  </div>
+                  
+                  <!-- second box -->
+                  <div class="col-lg-3 col-md-6 col-sm-12 event-box">
+                    <div>
+                     <img src="assets\images/past-events/6.jpg" alt="" class="img-fluid">
+                     <h5>LF Recruitments</h5>
+                   </div> 
+                  </div>
+
+                  <!-- modal-box -->
+                  <div class="modal-box">
+                      <div class="row modal-box-content">
+                        <div class="col-lg-7 col-md-12 modal-poster">
+                            <img src="" alt="">
+                        </div>
+  
+                        <div class="col-lg-5 col-md-12 modal-details">
+                          <h4></h4>
+                          <p class="pt-1">
+                              The Recruitments were be conducted by Lingua Franca
+                          </p>
+                          <h6>Date: <span>25-26 July</span></h6>
+                          <h6>Time: <span>10-12am</span></h6>
+                          <h6>Venue: <span>Computer Centre</span></h6>
+                          <a href="https://www.facebook.com/nibblecomputersociety">
+                            <button class="btn btn-primary rounded-pill mt-1">More Information</button>
+                          </a>
+                        </div>
+                      </div>
+                  </div>
+
+
+                  <!-- third box -->
+                  <div class="col-lg-3 col-md-6 col-sm-12 event-box">
+                    <div>
+                     <img src="assets\images/past-events/7.jpg" alt="" class="img-fluid">
+                     <h5>E-Summit 2019</h5>
+                   </div> 
+                  </div>
+                  <!-- modal-box -->
+                  <div class="modal-box">
+                      <div class="row modal-box-content">
+                        <div class="col-lg-7 col-md-12 modal-poster">
+                            <img src="" alt="">
+                        </div>
+  
+                        <div class="col-lg-5 col-md-12 modal-details">
+                          <h4></h4>
+                          <p class="pt-1">
+                              The event was be conducted by Entrepreneurship Development Cell - JSSATEN
+                          </p>
+                          <h6>Date: <span>25-26 July</span></h6>
+                          <h6>Time: <span>10-12am</span></h6>
+                          <h6>Venue: <span>Computer Centre</span></h6>
+                          <a href="https://www.facebook.com/nibblecomputersociety">
+                            <button class="btn btn-primary rounded-pill mt-1">More Information</button>
+                          </a>
+                        </div>
+                      </div>
+                  </div>
+        
+                  <!-- fourth box -->
+                  <div class="col-lg-3 col-md-6 col-sm-12 event-box">
+                    <div>
+                     <img src="assets\images/past-events/8.jpg" alt="" class="img-fluid">
+                     <h5>Tech-Trek</h5>
+                   </div> 
+                  </div>
+                  <!-- modal-box -->
+                  <div class="modal-box">
+                      <div class="row modal-box-content">
+                        <div class="col-lg-7 col-md-12 modal-poster">
+                            <img src="" alt="">
+                        </div>
+  
+                        <div class="col-lg-5 col-md-12 modal-details">
+                          <h4></h4>
+                          <p class="pt-1">
+                              The Event was be conducted by Nibble Computer Society
+                          </p>
+                          <h6>Date: <span>25-26 July</span></h6>
+                          <h6>Time: <span>10-12am</span></h6>
+                          <h6>Venue: <span>Computer Centre</span></h6>
+                          <a href="https://www.facebook.com/nibblecomputersociety">
+                            <button class="btn btn-primary rounded-pill mt-1">More Information</button>
+                          </a>
+                        </div>
+                      </div>
+                  </div>
+
+                </div>
+                  </div>
+
+              <!-- footer -->
+
+              <footer id="footer"> 
+                <div class="">
+                  <a href="https://www.facebook.com/nibblecomputersociety" class="navbar-brand font-weight-bolder text-light">
+                    <i class="fab fa-facebook-square"></i>
+                  </a>
+                </div>
+
+                <div class="">
+                  <a class="navbar-brand font-weight-bolder text-light" href="#events">Events Console</a>
+                </div>
+
+                <div class="">
+                  <a href="http://hackncs.com/" class="navbar-brand font-weight-bolder text-light">
+                    <i class="fas fa-globe"></i>
+                  </a>
+                </div>
+              </footer>
+
           </div>
       </div>
 
