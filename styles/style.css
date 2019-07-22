@@ -36,9 +36,31 @@ nav{
 }
 
 nav a{
-  margin-right: 20px;
   color: white !important;
 }
+
+.nav-item {
+  position: relative;
+  margin: 0 10px;
+}
+
+.nav-item::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 100%;
+  height: 2.6px;
+  background-color: white;
+  transform-origin: center;
+  transform: translate(-50%, 0) scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-item:hover::before {
+  transform: translate(-50%, 0) scaleX(1);
+}
+
 
 .navbar-collapse{
   justify-content: flex-end;
@@ -174,19 +196,44 @@ nav a{
   padding: 25px !important;
 }
 
-.slider img, .informal-events > div{
+.slider img{
   height: 70vh;
   border: 2px solid black;
 }
 
 .informal-events > div{
-  overflow-y: scroll;
+  box-shadow: 2px 3px 10px #000000;
 }
+
+.scroll{
+  overflow-y: scroll;
+  height: 60vh;
+}
+
+
+.scroll-header{
+  height: 5vh;
+  background: linear-gradient(to top, rgb(153, 227, 236), #389BCF);
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 500 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-footer{
+  height: 5vh;
+  background: linear-gradient(to bottom, rgb(153, 227, 236), #389BCF)
+}
+
+
 
 .informal-events ul{
   line-height: 1.2;
   padding-right: 3px;
   padding-top: 4px;
+  padding-left: 35px;
 }
 
 .informal-events ul li{
@@ -200,17 +247,17 @@ nav a{
 }
 
 /* width */
-.informal-events > div::-webkit-scrollbar {
+.scroll::-webkit-scrollbar {
   width: 4px;
 }
 
 /* Track */
-.informal-events > div::-webkit-scrollbar-track {
+.scroll::-webkit-scrollbar-track {
   background: #f1f1f1; 
 }
 
 /* Handle */
-.informal-events > div::-webkit-scrollbar-thumb {
+.scroll::-webkit-scrollbar-thumb {
   background: #389BCF; 
 }
 
@@ -399,7 +446,7 @@ footer > div{
     display: none !important;
   }
 
-  .slider img, .informal-events > div{
+  .slider img, .scroll{
     height: 50vh;
   }
 
