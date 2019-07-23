@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Serif|Poppins&display=swap');
+
 /* common styles */
 html{
   scroll-behavior: smooth;
@@ -14,6 +16,7 @@ body{
 h1, h2, h3, h4, h5, h6{
   font-weight: bolder;
   color: #389BCF;
+  font-family: 'Poppins', sans-serif;
 }
 
 h2{
@@ -198,7 +201,12 @@ nav a{
 
 .slider img{
   height: 70vh;
+  /* border: 2px solid black; */
+}
+
+.carousel-inner{
   border: 2px solid black;
+  border-radius: 15px;
 }
 
 .informal-events > div{
@@ -208,13 +216,12 @@ nav a{
 .scroll{
   overflow-y: scroll;
   height: 60vh;
+  padding: 10px 0;
 }
-
 
 .scroll-header{
   height: 5vh;
   background: linear-gradient(to top, rgb(153, 227, 236), #389BCF);
-  color: white;
   font-size: 1.3rem;
   font-weight: 500 !important;
   display: flex;
@@ -222,12 +229,14 @@ nav a{
   align-items: center;
 }
 
+.scroll-header h4{
+  margin: 0 !important;
+}
+
 .scroll-footer{
   height: 5vh;
   background: linear-gradient(to bottom, rgb(153, 227, 236), #389BCF)
 }
-
-
 
 .informal-events ul{
   line-height: 1.2;
@@ -348,6 +357,14 @@ nav a{
   border: 1px solid lightgray;
 }
 
+.modal-details button{
+  transition: 0.4s;
+}
+
+.modal-details button:hover{
+  transform: scale(1.08);
+}
+
 @keyframes fadeIn {
   from { 
     opacity: 0;
@@ -446,12 +463,17 @@ footer > div{
     display: none !important;
   }
 
-  .slider img, .scroll{
+  .slider img{
+    height: 40vh;
+  }
+
+  .scroll{
     height: 50vh;
   }
 
   .content{
     margin: 0;
+    padding-top: 20px !important;
   }
 
   .modal-box{
@@ -510,10 +532,6 @@ footer > div{
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 10px;
-  }
-
-  .slider img, .informal-events > div{
-    height: 40vh;
   }
 }
 
