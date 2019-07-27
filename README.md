@@ -2,6 +2,12 @@
 
 Events Console is an Online Platform that shows all the news and information of all the Past and Upcoming events which are conducted by the Societies and Clubs of our College. It also covers all the Informal news of our College.
 
+### Features:
+
+   1. The Online Platform shows _formal_ as well as _informal_ news of all the happenings in college.   
+   2. It also shows information about the upcoming and ongoing events of all the societies of the college.  
+   3. It shows most of the information in a _pictorial manner_ using posters and images to make it interactive and attractive to the user.
+
 ### Technologies Used:
    * HTML
    * CSS(Cascading Style Sheets)
