@@ -220,7 +220,7 @@ nav a{
 }
 
 .scroll-header{
-  height: 5vh;
+  height: 6vh;
   background: linear-gradient(to top, rgb(153, 227, 236), #389BCF);
   font-size: 1.3rem;
   font-weight: 500 !important;
@@ -248,6 +248,10 @@ nav a{
 .informal-events ul li{
   margin-bottom: 16px;
   text-align: left;
+}
+
+.informal-events hr{
+  margin: 13px 0 !important;
 }
 
 .date{
