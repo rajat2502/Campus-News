@@ -210,7 +210,7 @@ nav a{
 }
 
 .informal-events > div{
-  box-shadow: 2px 3px 10px #000000;
+  box-shadow: 1px 3px 15px rgba(0, 0, 0, 0.3);
 }
 
 .scroll{
@@ -282,7 +282,7 @@ nav a{
 
 .event-box > div{
   padding: 15px 15px;
-  box-shadow: 2px 3px 10px #000000;
+  box-shadow: 1px 3px 15px rgba(0, 0, 0, 0.3);
   height: 250px !important;
   cursor: pointer;
   position: relative;
