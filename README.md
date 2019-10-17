@@ -13,6 +13,7 @@ Events Console is an Online Platform that shows all the news and information of 
    * CSS(Cascading Style Sheets)
    * Javascript
    * Bootstrap 4
+   * PWA (Progressive Web App)
    
 ### How to Run Locally :
   
@@ -24,7 +25,7 @@ Events Console is an Online Platform that shows all the news and information of 
   
       `cd Events-Console`
       
-  3. Run **Index.html** in your browser
+  3. Run **Index.html** in any browser
           
       <table><tr><td>
           <img src="https://user-images.githubusercontent.com/42200276/61961199-a78dc080-afe4-11e9-89ef-38906d824418.png" />
